@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@media screen and (max-width: 900px){
+    html{
+        font-size: 5px;
+    }
+    #textContainer{
+        font-size: 2rem;
+    }
+}
+div, html, body{
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px;
+}
+body{
+    height: 100%;
+    width: auto;
+    background: linear-gradient(15deg, #6d4dd9, #14badc) no-repeat;
+    height: 100%;
+    overflow: hidden;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+#bigMinutes, #gramma{
+    font-size: 3rem;
+    z-index: 11;
+}
+#bigHour{
+    position: absolute;
+    font-family: 'Staatliches', cursive;
+    top: -0.04em;
+    font-size: 20em;
+    left: 0.3em;
+    z-index: 9;
+    background: linear-gradient(15deg, #6d4dd9, #14badc) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: darkviolet;
+    text-fill-color: darkviolet;
+    opacity: 0.3;
+}
+#bigDay{
+    position: absolute;
+    font-family: 'Staatliches', cursive;
+    top: -53%;
+    font-size: 28em;
+    z-index: 9;
+    background: linear-gradient(15deg, #6d4dd9, #14badc) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: darkviolet;
+    text-fill-color: darkviolet;
+    opacity: 0.1;
+    right: 8%;
+}
+#bigYear{
+    position: absolute;
+    font-family: 'Staatliches', cursive;
+    height: 100%;
+    font-size: 40rem;
+    left: 0;
+    bottom: -10%;
+    z-index: 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(15deg, #6d4dd9, #14badc) no-repeat;
+    text-fill-color: darkviolet;
+    -webkit-text-fill-color: darkviolet;
+    opacity: 0.1;
+    margin: 0;
+    padding: 0;
+}
+#temp{
+    -webkit-filter: drop-shadow(0 20px 10px rgba(0,0,0,.4));
+            filter: drop-shadow(0 20px 10px rgba(0,0,0,.4));
+    padding: 5px;
+    height: 35rem;
+    width: 35rem;
+    margin: 0 auto;
+}
+#textContainer{
+    border-radius: 250px;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
+    text-align: center;
+    display: table;
+}
+#container{
+    position: absolute;
+    width: 70%;
+    left: 40%;
+    top: 10%;
+    border-radius: 250px;
+    height: 20%;
+    background: linear-gradient(15deg,#6d4dd9,#14badc);
+    background-repeat: no-repeat;
+    -webkit-filter: drop-shadow(0 20px 10px rgba(0,0,0,.4));
+            filter: drop-shadow(0 20px 10px rgba(0,0,0,.4));
+    padding: 5px;
+    z-index: 1;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s
+}
+#container:hover{
+    left: 80%;
+}
+#ball{
+    height:100%; 
+    width: 100%;
+    margin:0; 
+    padding:0; 
+    position:absolute;
+    background: linear-gradient(15deg,#6d4dd9,#14badc);
+    border-radius: 100%;
+    z-index: 5;
+    animation: borderAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+#dayText{
+    background: linear-gradient(15deg,#6d4dd9,#14badc);
+    -webkit-background-clip: text;
+            background-clip: text;
+    text-fill-color: transparent;
+    padding: 0;
+    margin:0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@keyframes borderAnimation{
+    0% {
+
+        border-radius: 300px 300px 300px 300px;
+    
+    }
+    10% {
+    
+        border-radius: 350px 300px 300px 300px;
+    
+    }
+    20% {
+    
+        border-radius: 350px 283px 320px 319px;
+    
+    }
+    30% {
+    
+        border-radius: 312px 315px 362px 332px;
+    
+    }
+    40% {
+    
+        border-radius: 327px 315px 362px 332px;
+    
+    }
+    50% {
+    
+        border-radius: 501px 505px 592px 462px;
+    
+    }
+    60% {
+    
+        border-radius: 307px 325px 292px 302px;
+    
+    }
+    70% {
+    
+        border-radius: 383px 365px 402px 362px;
+    
+    }
+    80% {
+    
+        border-radius: 300px 300px 300px 300px;
+    
+    }
+    90% {
+    
+        border-radius: 350px 250px 350px 250px;
+    
+    }
+    100% {
+    
+        border-radius: 450px 500px 500px 500px;
+    
+    }
+}
