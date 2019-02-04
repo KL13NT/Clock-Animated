@@ -5,6 +5,7 @@
     //Setting the text that's to be used later in the clock
 
     let initialState = getNewState() //Getting the time once the user enters the site
+    initialState.initial = true 
 
     function getNewState(){ //Constructor function for time. Using an object to collect all the variables at once. 
         return {
@@ -13,7 +14,6 @@
             days: new Date().getDate(), 
             years: new Date().getFullYear(),
             dayText: new Date().getDay(),
-            seconds: new Date().getSeconds()
         }
     }
     
@@ -62,6 +62,6 @@
                     bigHour.appendChild(innerSpan)
                 }
             }
-        initialState = {...newState}
+        initialState = {...newState} //SETTING THE STATE TO THE UPDATED VALUE, OTHERWISE IT'LL KEEP UPDATING FOR NOTHING
     }, 16)
 })()
